@@ -52,7 +52,7 @@
     ],
     "start_url": "./index.html",
     "background_color": "#cc3300",
-    "display": "standalone",
+    "display": "fullscreen",
     "theme_color": "#cc7400",
     "shortcuts":[
         {
