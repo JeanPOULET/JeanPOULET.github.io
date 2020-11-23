@@ -1,0 +1,33 @@
+{
+    "short_name": "ginko",
+    "name": "Ginko Bus",
+    "description": "Les bus de ginko",
+    "icons": [
+        {
+            "src":"/icons/icon-128.png",
+            "type":"image/png",
+            "sizes":"128x128"
+        },
+        {
+            "src":"/icons/icon-180.png",
+            "type":"image/png",
+            "sizes":"180x180"
+        },
+        {
+            "src":"/icons/icon-192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"/icons/icon-256.png",
+            "type":"image/png",
+            "sizes":"256x256"
+        },
+        {
+            "src":"/icons/icon-512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        }
+    ],
+    "start_url": "/?source=pwa"
+}
