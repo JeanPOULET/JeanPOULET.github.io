@@ -8,6 +8,7 @@ for(var i=0; i<icons.length; i++) {
 }
 
 contentToCache.push('index.html');
+contentToCache.push('app.js');
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
