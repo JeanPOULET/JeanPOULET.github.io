@@ -20,7 +20,24 @@ self.addEventListener('install', (e) => {
       );
 });
 
-self.addEventListener('fetch', (e) => {
+
+self.addEventListener('fetch', function (event) {
+    event.respondWith(
+      caches.open('ginko-dynamic').then(function (cache) {
+        return cache.match(event.request).then(function (response) {
+          return (
+            response ||
+            fetch(event.request).then(function (response) {
+              cache.put(event.request, response.clone());
+              return response;
+            })
+          );
+        });
+      }),
+    );
+  });
+
+/*self.addEventListener('fetch', (e) => {
     e.respondWith(
       caches.match(e.request).then((r) => {
             console.log('[Service Worker] Fetching resource: '+e.request.url);
@@ -33,4 +50,4 @@ self.addEventListener('fetch', (e) => {
         });
       })
     );
-  });
+  });*/
