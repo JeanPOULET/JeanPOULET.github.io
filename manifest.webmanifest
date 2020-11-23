@@ -4,6 +4,21 @@
     "description": "Les bus de ginko",
     "icons": [
         {
+            "src": "icons/icon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+          },
+          {
+            "src": "icons/icon-64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+          },
+          {
+            "src": "icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
             "src":"/icons/icon-128.png",
             "type":"image/png",
             "sizes":"128x128"
@@ -29,5 +44,5 @@
             "sizes":"512x512"
         }
     ],
-    "start_url": "/?source=index"
+    "start_url": "/?source=index.html"
 }
