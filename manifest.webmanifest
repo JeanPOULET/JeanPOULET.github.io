@@ -44,5 +44,7 @@
             "sizes":"512x512"
         }
     ],
-    "start_url": "/?source=index.html"
+    "start_url": "./?source=index.html",
+    "background_color": "#3367D6",
+    "theme_color": "#3367D6"
 }
